@@ -14,7 +14,7 @@ CREATE TABLE `ci_sessions` (
   `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
   `data` text NOT NULL DEFAULT '',
   `timestamp` bigint DEFAULT 0 NOT NULL,
-  PRIMARY KEY (`session_id`),
+  PRIMARY KEY (`id`),
   KEY `last_activity` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
