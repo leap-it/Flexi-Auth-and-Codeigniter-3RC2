@@ -17,6 +17,9 @@ Update the 'encryption_key' config setting to a value of your choice.
 This is optional, but will improve security with your CodeIgniter installation.
 $config['encryption_key'] = 'YOUR_ENCRYPTION_KEY';
 
+get your key here 
+http://jeffreybarke.net/tools/codeigniter-encryption-key-generator/
+
 Update the 'global_xss_filtering' config setting to TRUE.
 This is optional, but will improve security with your CodeIgniter installation.
 $config['global_xss_filtering'] = TRUE;
