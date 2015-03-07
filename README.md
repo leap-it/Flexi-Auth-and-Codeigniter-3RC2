@@ -17,13 +17,15 @@ Update the 'encryption_key' config setting to a value of your choice.
 This is optional, but will improve security with your CodeIgniter installation.
 $config['encryption_key'] = 'YOUR_ENCRYPTION_KEY';
 
+get your key here 
+http://jeffreybarke.net/tools/codeigniter-encryption-key-generator/
+
 Update the 'global_xss_filtering' config setting to TRUE.
 This is optional, but will improve security with your CodeIgniter installation.
 $config['global_xss_filtering'] = TRUE;
 
-This step must be completed to all flexi auth installations.
-Update the 'sess_use_database' config setting to TRUE. This instructs CodeIgniter to save session data to the database rather than as a browser cookie.
-This is required as the auth session data is too big to store in a cookie.
+session config 
+
 $config['sess_driver'] = 'database';
 
 $config['sess_save_path'] = 'ci_sessions';

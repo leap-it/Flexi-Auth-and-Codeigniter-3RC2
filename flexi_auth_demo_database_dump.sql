@@ -7,16 +7,14 @@ SET FOREIGN_KEY_CHECKS=0;
 -- Table structure for `ci_sessions`
 -- ----------------------------
 DROP TABLE IF EXISTS `ci_sessions`;
-CREATE TABLE `ci_sessions` (
-  `id` varchar(40) NOT NULL DEFAULT '0',
-  `ip_address` varchar(16) NOT NULL DEFAULT '0',
-  `user_agent` varchar(120) DEFAULT NULL,
-  `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
-  `data` text NOT NULL DEFAULT '',
-  `timestamp` bigint DEFAULT 0 NOT NULL,
-  PRIMARY KEY (`session_id`),
-  KEY `last_activity` (`last_activity`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `ci_sessions` (
+        `id` varchar(40) NOT NULL,
+        `ip_address` varchar(45) NOT NULL,
+        `timestamp` int(10) unsigned DEFAULT 0 NOT NULL,
+        `data` blob DEFAULT '' NOT NULL,
+        PRIMARY KEY (id),
+        KEY `ci_sessions_timestamp` (`timestamp`)
+);
 
 -- ----------------------------
 -- Records of ci_sessions
