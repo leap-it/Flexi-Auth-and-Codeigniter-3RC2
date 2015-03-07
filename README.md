@@ -44,4 +44,8 @@ This step is only required if you are installing the flexi auth demo.
 Update the 'default_controller' to the sites home page.
 $route['default_controller'] = 'auth_lite/index';
 
+also in the demo controllers update theses two lines so suite your needs
+		$this->load->vars('base_url', 'http://www.leap-it.be/test/');
+		$this->load->vars('includes_dir', 'http://www.leap-it.be/test/includes/');
+
 don't forget to change the RewriteBase /your flexiauth folder/ in .htaccess (found in flexiauth folder)
