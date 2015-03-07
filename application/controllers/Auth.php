@@ -49,8 +49,8 @@ class Auth extends CI_Controller {
 		}
 		
 		// Note: This is only included to create base urls for purposes of this demo only and are not necessarily considered as 'Best practice'.
-		$this->load->vars('base_url', 'http://www.leap-it.be/cake/');
-		$this->load->vars('includes_dir', 'http://www.leap-it.be/cake/includes/');
+		$this->load->vars('base_url', 'http://yourdomain/folder/');
+		$this->load->vars('includes_dir', 'http://yourdomain/folder/includes/');
 		$this->load->vars('current_url', $this->uri->uri_to_assoc(1));
 		
 		// Define a global variable to store data that is then used by the end view page.
