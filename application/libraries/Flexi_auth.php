@@ -355,7 +355,7 @@ class Flexi_auth extends Flexi_auth_lite
 			$email_title = ' - Forgotten Password Verification';
 			
 			$user_data = array(
-				'id' => $user_id,
+				'user_id' => $user_id,
 				'identity' => $identity,
 				'forgotten_password_token' => $forgotten_password_token
 			);
@@ -488,7 +488,7 @@ class Flexi_auth extends Flexi_auth_lite
 			$email_title = ' - Email Change Verification';
 		
 			$user_data = array(
-				'id' => $user_id,
+				'user_id' => $user_id,
 				'current_email' => $current_email,
 				'new_email' => $new_email,
 				'update_email_token' => $update_email_token
@@ -585,7 +585,7 @@ class Flexi_auth extends Flexi_auth_lite
 				$email_title = ' - Account Activation';
 			
 				$user_data = array(
-					'id' => $user_id,
+					'user_id' => $user_id,
 					'identity' => $identity,
 					'activation_token' => $activation_token
 				);
