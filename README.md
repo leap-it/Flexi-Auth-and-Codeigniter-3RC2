@@ -1,6 +1,7 @@
 # Codeigniter-3-RC2-with-Flexiauth
 Codeigniter 3-RC2 with flexiauth 
 
+New version for CI 3.03 can be download here http://www.leap-it.be/flexiauth
 
 Update the 'base_url' to CodeIgniters root installation directory.
 
