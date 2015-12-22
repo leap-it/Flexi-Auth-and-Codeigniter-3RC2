@@ -20,7 +20,7 @@ class Auth_public extends CI_Controller {
 		
 		// Load required CI libraries and helpers.
 		$this->load->database();
-		 $this->load->driver("session");
+		$this->load->library('session');
  		$this->load->helper('url');
  		$this->load->helper('form');
 
